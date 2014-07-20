@@ -6,6 +6,12 @@ def say_hello(name, city, state)
 end
 
 
+class Sleigh
+  def authenticate(name, password)
+    name == "Santa Claus" && password == "Ho Ho Ho!"
+  end
+end
+
 # B中级:
 # Greet Me
 

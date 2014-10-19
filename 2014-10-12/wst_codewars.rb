@@ -8,6 +8,7 @@ def unique(integers)
   end
   a
 end
+#为什么要reverse一下？
 
 
 #Change Machine

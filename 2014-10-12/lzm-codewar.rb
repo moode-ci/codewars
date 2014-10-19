@@ -11,6 +11,8 @@ Remove Duplicates
     array
   end
 
+#多用ruby内置的方法去解决问题
+
 Breaking chocolate problem
 
   def break_chocolate(n, m)

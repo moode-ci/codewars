@@ -19,3 +19,8 @@ def change(cents)
 end
 
 #C:Sherlock on numbers
+def find_suspect(*numbers)
+  appear_number = numbers.group_by{|o| o}.values.collect{|o|o.count}
+  numbers.group_by{|o|o}.find{|o|o[1].count== appear_number.min}[0] if appear_number.find_all{|o|o==appear_number.min}.count ==1
+end
+

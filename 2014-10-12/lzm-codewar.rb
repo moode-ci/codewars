@@ -13,7 +13,7 @@ Remove Duplicates
 
 #多用ruby内置的方法去解决问题
 
-Breaking chocolate problem
+# Breaking chocolate problem
 
   def break_chocolate(n, m)
     n != 0 && m != 0 ? n * m - 1 : 0

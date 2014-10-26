@@ -17,3 +17,17 @@ def digital_root(n)
   end
   result
 end
+
+# C高级:
+# Validate Credit Card Number(http://www.codewars.com/kata/validate-credit-card-number/ruby)
+def validate(n)
+  if n.to_s.length <= 16
+    n_to_arr = n.to_s.chars.map{|str_num| str_num.to_i}
+    n_arr_double = n_to_arr.map.with_index {|value, index| ((n_to_arr.length.even? && index.even?) || (n_to_arr.length.odd? && index.odd?)) ? value * 2 : value}
+    n_arr_less_9 = n_arr_double.map{|num| num > 9 ? num - 9 : num}
+    n_arr_sum = n_arr_less_9.reduce(0){|sum, num| sum + num}
+    n_arr_sum % 10 == 0
+  else
+    false
+  end
+end

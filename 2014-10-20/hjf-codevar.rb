@@ -22,3 +22,4 @@ def validate(n)
   end
   res.reduce(0){|result, item| result + item} % 10 == 0 ? true : false
 end
+#最后不需要再加上多余的三元判断，只需要直接返回是否等于0就好了

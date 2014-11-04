@@ -7,11 +7,7 @@ end
 # Power of two
 
 def power_of_two?(x)
-<<<<<<< HEAD
-  a.chars.reduce(&:+) ==1
-=======
   x.to_s(2).chars.map(&:to_i).reduce(&:+) ==1
->>>>>>> liqiang
 end
 
 # Who has the most money?

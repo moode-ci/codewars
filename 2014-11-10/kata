@@ -1,0 +1,7 @@
+B中级:
+Name That Integer(http://www.codewars.com/kata/name-that-integer/ruby)
+Function Composition(http://www.codewars.com/kata/function-composition/ruby)
+
+C高级:
+#这题目很好，一定要读懂题目，体会是代码是怎样根据需求一步步优化的，这题目也很好地表明了元编程的意图
+Custom attr_accessor(http://www.codewars.com/kata/custom-attr-accessor/ruby)
